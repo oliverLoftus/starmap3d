@@ -71,7 +71,7 @@ function drawBackground(bg) {
   image.setAttribute("width", size);
   image.setAttribute("height", size);
 
-  //image.style.pointerEvents = "none";
+  image.style.pointerEvents = "none";
 
   svgContainer.appendChild(image); // Append directly to the SVG container
 }
