@@ -71,7 +71,7 @@ function drawBackground(bg) {
   image.setAttribute("width", size);
   image.setAttribute("height", size);
 
-  image.style.pointerEvents = "none";
+  //image.style.pointerEvents = "none";
 
   svgContainer.appendChild(image); // Append directly to the SVG container
 }
@@ -83,7 +83,7 @@ function Z_sort(starA, starB) {
 function drawSvg() {
   svgContainer.innerHTML = ""; // Clear previous content
   for (const bg of backgroundObjects) {
-    if (bg.y > 0) {
+    if (bg.y > 45) {
       drawBackground(bg);
     }
   }
